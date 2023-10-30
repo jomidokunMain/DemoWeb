@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, jsonify,flash
-import sqlite3
-import numpy as np
+
 
 app = Flask(__name__)
 
@@ -128,5 +127,4 @@ def bend70_cvbmp1():
 @app.route('/parent1/cv&bm/sq')
 def sq_cvbmp1():
     return render_template('parent1/cv&bm/sq.html')
-
 
