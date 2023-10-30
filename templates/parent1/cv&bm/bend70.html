@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+    <link rel="icon" href="/static/icon.ico" type="image/x-icon" />
+    <title>Skeleton</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="top-section">
+        <div id="top-nav">
+          <a href="/parent2/lenning">50<sup>th</sup>percentile</a>
+          <a href="/parent1/lenning" class="active"
+            >95<sup>th</sup>percentile</a
+          >
+        </div>
+        <div id="top-nav2">
+          <a href="/main">Home</a>
+          <a href="/team">Research Team</a>
+        </div>
+        <div id="logo">
+          <img class="logo" src="/static/images/logo22.png" alt="Your Logo">
+        </div>
+        <h1 id="title">Demo</h1>
+      </div>
+        <div id="left-section">
+        <div id="left-nav-bar">
+            <div id="has-dropdown">
+            <div class="navbar" onclick="toggleDropdown('myDropdown')">Computer Vision Method</div>
+            <div id="myDropdown" class="dropdown-content">
+                <li>
+                <a href="/parent1/lenning" id="show-video" >Lenning</a>
+                </li>
+                <li><a href="/parent1/fullbend" id="show-video" >Full Bend</a></li>
+                <li><a href="/parent1/bend40" id="show-video" >Bend 40d</a></li>
+                <li><a href="/parent1/bend70" id="show-video" >Bend 70d</a></li>
+                <li><a href="/parent1/sq" id="show-video">Squatting</a></li>
+            </div>
+            <br></br>
+            <br></br>
+            <div class="navbar"  onclick="toggleDropdown('myDropdown1')" >Biomechanical Method</div>
+            <div id="myDropdown1" class="dropdown-content">
+                <li>
+                    <a href="/parent1/bm/lenning" id="show-video"
+                        >Lenning</a
+                    >
+                    </li>
+                    <li><a href="/parent1/bm/fullbend" id="show-video" >Full Bend</a></li>
+                    <li><a href="/parent1/bm/bend40" id="show-video">Bend 40d</a></li>
+                    <li><a href="/parent1/bm/bend70" id="show-video" >Bend 70d</a></li>
+                    <li><a href="/parent1/bm/sq" id="show-video">Squatting</a></li>
+            </div>
+            <br></br>
+            <br></br>
+            <div class="navbar" class="active" onclick="toggleDropdown('myDropdown2')">Combined Method</div>
+            <div id="myDropdown2" class="dropdown-content">
+                <li>
+                <a href="/parent1/cv&bm/lenning" id="show-video">Lenning</a>
+                </li>
+                <li><a href="/parent1/cv&bm/fullbend" id="show-video">Full Bend</a></li>
+                <li><a href="/parent1/cv&bm/bend40" id="show-video">Bend 40d</a></li>
+                <li><a href="/parent1/cv&bm/bend70" id="show-video" class="active">Bend 70d</a></li>
+                <li><a href="/parent1/cv&bm/sq" id="show-video">Squatting</a></li>
+            </div>
+            </div>
+        </div>
+        <div id="main-content">
+            <p>
+                <center> 
+                    <h2> Marker -Based Method </h2>
+                <div class="fixed-size">
+                    <div>  
+                        <div class="video">
+                            <video id="video1" controls autoplay loop>
+                                <source src="/static/videos/CV&BM/Bend70.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-controls">
+                                <div>
+                                    <button class="speed-button" onclick="changeSpeed('video1', 0.1)">0.1x</button>
+                                    <button class="speed-button" onclick="changeSpeed('video1', 0.25)">0.25x</button>
+                                    <button class="speed-button" onclick="changeSpeed('video1', 0.5)">0.5x</button>
+                                    <button class="speed-button" onclick="changeSpeed('video1', 1.0)">1.0x</button>
+                                    <button class="speed-button" onclick="changeSpeed('video1', 2.5)">2.5x</button>
+                                    <button class="speed-button" onclick="changeSpeed('video1', 5)">5x</button>
+                                </div>
+                            </div>
+                            <div class="time-bar">
+                                <div id="current-time1" class="current-time">0:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </center>
+            </p>
+            <p>
+                <center> 
+                    <h2> Computer Vision Method </h2>
+                <div class="fixed-size">
+                    <div>  
+                        <div class="video">
+                            <video id="video2" controls autoplay loop>
+                                <source src="/static/videos/CV&BM/Bend70_EXO.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-controls">
+                            <div>
+                                <button class="speed-button" onclick="changeSpeed('video2', 0.1)">0.1x</button>
+                                <button class="speed-button" onclick="changeSpeed('video2', 0.25)">0.25x</button>
+                                <button class="speed-button" onclick="changeSpeed('video2', 0.5)">0.5x</button>
+                                <button class="speed-button" onclick="changeSpeed('video2', 1.0)">1.0x</button>
+                                <button class="speed-button" onclick="changeSpeed('video2', 2.5)">2.5x</button>
+                                <button class="speed-button" onclick="changeSpeed('video2', 5)">5x</button>
+                            </div>
+                        </div>
+                        <div class="time-bar">
+                            <div id="current-time2" class="current-time"></div>
+                        </div>
+                    </div>
+                </div> 
+            </center>
+            </p>
+        </div>
+        </div>
+        <div id="bottom-section">
+
+      </div>
+    </div>
+    <script src="/static/js/scripts.js"></script>
+  </body>
+</html>
