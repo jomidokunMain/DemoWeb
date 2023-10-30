@@ -130,5 +130,3 @@ def sq_cvbmp1():
     return render_template('parent1/cv&bm/sq.html')
 
 
-if __name__ == '__main__':
-    app.run(host='10.0.0.57', port=8900, debug=True)
