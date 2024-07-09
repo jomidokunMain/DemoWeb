@@ -128,3 +128,6 @@ def bend70_cvbmp1():
 def sq_cvbmp1():
     return render_template('parent1/cv&bm/sq.html')
 
+
+# if __name__ == '__main__':
+#     app.run(host='127.0.0.1', port=8900, debug=True)
